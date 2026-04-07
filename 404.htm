@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script>
+      // Redirect all 404s back to index for React SPA routing
+      sessionStorage.setItem('redirect', location.pathname + location.search);
+      location.replace('/');
+    </script>
+  </head>
+  <body></body>
+</html>
